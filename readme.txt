@@ -15,3 +15,30 @@ lec 06. local and global variables.
 lec 07. console.
 console.log, .error, .table, .warn.
 console.time at start of code and console.end at end of code. it will tell time taken.
+
+lec 08. if statement.
+lec 09. if else. 
+lec 10. ternary operator.
+lec 11. switch. 
+lec 12. if else if. 
+lec 13. break and continue. 
+
+lec 14. data types. 
+
+        var x= "hello world"; string
+        var y=30. number 
+        var z= true; boolean
+        var arr = ["html", "css", "js"]; array
+        var obj= { "name":"ali", "age":"25", "subj":"comp" } object
+        var a; undefined
+        var b= null; null
+
+lec 15. arithmatic operators. 
++, -, *, /, %, ++, --, 
+
+lec 16. assignment operator.
+=, +=. -=, *=, /=, %=. 
+
+lec 17. comparison operator.
+==, ===, !=, !==, >, <, >=, <=.
+
