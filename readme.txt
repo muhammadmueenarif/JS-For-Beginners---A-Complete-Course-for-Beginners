@@ -42,3 +42,21 @@ lec 16. assignment operator.
 lec 17. comparison operator.
 ==, ===, !=, !==, >, <, >=, <=.
 
+lec 18. alert 
+to show an alert message.
+alert("how are you"). we can set condition of if also and show output in alert. 
+
+lec 19. confirm box.
+used for 2 options. 
+var a= confirm("are you robot");
+        if(a) {
+            alert("thanks");
+        }
+        else {
+            alert("its ok");
+        }
+this will give two choices. cancel and ok. 
+
+lec 20. prompt box. 
+used to get some input from user. 
+        prompt("enter something");
