@@ -277,3 +277,52 @@ using for in loop.
     for(var key in a) {
         document.write(key + ": " + a[key] + "<br/>");
      }
+
+
+lec 45. string and methods.
+length, tolowercase, touppercase, includes, startswith, endswith, search, match, indexof, lastindexof, 
+replace, trim, charat, concat, split, repeat, slice, substr, substring.
+
+.length tells length of string. 
+.tolowercase
+.touppercase
+.includes
+.startswith
+.endswith
+.search. it gives index of particular character. if there are two characters like d used 2 times, 
+it will show last index where d is used last time. 
+
+.match. 
+it will tell whether given character is in string or not. /g means global. whole string. 
+var a= "Javascript is great language";
+   var b= a.match(/a/g);
+   document.write(b);
+// this will give a as many time as it is used. a,a,a,a,a. 
+
+.indexOf used to check index of word. like indexOf(is); //11. it gave where is used 1st time.
+.lastIndexOf(is); //22 because used at 22 last time. 
+
+.replace. this will replace is with are but only 1st. if we want to change all is to are, then use /is/g, "are";
+
+var a= "Javascript is great language";
+   var b= a.replace("is", "are");
+   document.write(b);
+
+.trim. if there are empty spaces at start of string then use this. 
+.charat shows what character is that index. 
+.charcodeat. it will show ascii code of that character. 
+.fromcharcode. we enter ascii code and it shows the corresponding number. 
+.concat. used to join string.
+.split. used to split the string.
+var a= "Javascript is great language";
+   var b= a.split("i");
+   document.write(b);
+// it will split from all i in the string. 
+
+.repeat. used to repeat string. a.repeat(5). it will print 5 times. 
+
+.slice. a.slice(3). it will not print first 3 letters and print all till end. 
+a.slice(1,6); from 1 to 5. not include 6.  
+
+.substr. it will work like slice but it will include last value also. 
+.tostring. it will convert any value to string data type. 
