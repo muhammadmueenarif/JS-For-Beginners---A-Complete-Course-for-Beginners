@@ -326,3 +326,32 @@ a.slice(1,6); from 1 to 5. not include 6.
 
 .substr. it will work like slice but it will include last value also. 
 .tostring. it will convert any value to string data type. 
+
+
+lec 46. number methods.
+
+        var a= "100";
+        var b= Number(a);
+        document.write(b);
+// coverted data type into number. 
+
+.parseint. this will convert to int. 
+.parsefloat. it will display in points. 
+.isfinite. it will return true or false, it will tell whether number is finite or not.
+        var a= 100;
+        var b= isFinite(a);
+        document.write(b);
+
+.isinteger. it will tell whether number is integer or not. return true or false.
+.tofixed. it will specify how many values shown after points, 
+
+        var a= 100.23863490;
+        var b= a.toFixed(3);
+        document.write(b);
+
+.toPrecision. same as tofixed. it will roundoff. 
+
+        var a= 20.35768;
+        var b= a.toPrecision(3);
+        document.write(b); //20.4 output
+
