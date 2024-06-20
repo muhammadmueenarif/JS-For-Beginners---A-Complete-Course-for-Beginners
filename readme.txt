@@ -99,3 +99,74 @@ var a =["ali", "ahsan", "nawaz", "umer", "ali", "haider"];
     document.write(b);
 // this will show last index of ali. that is 4.
 
+lec 38. foreach.
+this will work with array.
+ var name= ["ali", "nawaz", "umer", "hassan", "kashan"];
+    name.forEach(loop);
+    function loop(value, index) {
+        document.write(index + " " + value + "<br>");
+    }
+
+this code is not working. don't know why. 
+
+
+lec 38. tostring, valueof, and fill methods. 
+
+.tostring is used to change array into string. when we change array into string, we cannot use array
+methods on it.
+ var a= [10, 20, 30, 40, 50];
+    document.write("Original Array: " + a + "<br>");
+    a.toString();
+    document.write("Array to String: " + a + "<br>");
+
+.valueof is used to print the values of array. it does not work with specific index but full array. 
+
+.fill method will write that word in full array. 
+ var a= [10, 20, 30, 40, 50];
+        a.fill("Hy");
+        document.write(a);
+it will print hy five times instead of assigned values.
+
+
+lec 39. include method.
+it is used when we create lengthy array and forget which value we used or not.
+ var a= [10,20,30,40,50,60,70,80,90,100];
+   document.write(a.includes(10));
+// it will show true.
+
+
+lec 40. some and every method.
+it is used when we make arrays and want to check values in these arrays. it works with a function.
+
+   var a= [10,20,30,40,50,60,70,80,90,100];
+   document.write(a+ "<br/>");
+   var b= a.some(checkvalue);
+   document.write(b + "<br/>");
+   function checkvalue(age) {
+    return age>=18;
+   }
+
+it will check if there is value > 18 in the array and return true. else false. 
+
+lec 41. find and findindex methods.
+ var a= [10,20,30,40,50,60,70,80,90,100];
+   document.write(a+ "<br/>");
+   var b= a.find(checkvalue);
+   document.write(b + "<br/>");
+   function checkvalue(age) {
+    return age>=18;
+   }
+find and findindex are same. find give us value but findindex give us index of that value.
+
+
+lec 42. filter method. 
+find and some gives only one first value in output. but filter will show all the values in output.
+
+ var a= [10,20,30,40,50,60,70,80,90,100];
+   document.write(a+ "<br/>");
+   var b= a.filter(checkvalue);
+   document.write(b + "<br/>");
+   function checkvalue(age) {
+    return age>=18;
+   }
+
