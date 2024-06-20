@@ -60,3 +60,42 @@ this will give two choices. cancel and ok.
 lec 20. prompt box. 
 used to get some input from user. 
         prompt("enter something");
+
+lec 21. functions.
+lec 22. function with parameter. 
+lec 23. function with return.
+lec 24. events in js. 
+
+lec 25. loops. while loop. 
+lec 26. do while. 
+lec 27. for loop.
+lec 28. nested loop. 
+lec 29. arrays. 
+lec 30. modify and delete arrays. 
+lec 31. sort and reverse. 
+lec 32. pop and push.
+lec 33. shift and unshift. 
+lec 34. concat and join. 
+lec 35. slice and splice. 
+
+lec 36. isArray method. 
+it tells whether the passed value is array or not. 
+var a= [10, 20, 30];
+      var b= Array.isArray(a);
+      document.write(b);
+
+use if condition and show output it is an array if given value is array. else show not an array.
+
+
+lec 37. indexof and lastindex methods. 
+
+ var a =["ali", "ahsan", "nawaz", "umer", "haider"];
+    var b= a.indexOf("ali");
+    document.write(b);
+// this will show index of ali. 0.
+
+var a =["ali", "ahsan", "nawaz", "umer", "ali", "haider"];
+    var b= a.lastIndexOf("ali");
+    document.write(b);
+// this will show last index of ali. that is 4.
+
