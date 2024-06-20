@@ -170,3 +170,110 @@ find and some gives only one first value in output. but filter will show all the
     return age>=18;
    }
 
+
+lec 43. Objects.
+
+        var a= {
+            name:"ali",
+            class: "one",
+            subj: "comp", 
+            marks: "50"
+        };
+        document.write(a.subj);
+
+now let's see how to pass function in array. and how to access it. 
+
+ var a= {
+            name:"ali",
+            class: "one",
+            subj: "comp", 
+            marks: "50",
+            friends:["ahsan", "umer", "usama", "saad", "haris"],
+
+            income: function () {
+                return 25000;
+            },
+
+        };
+        document.write(a.income());
+
+now this keyword. 
+when we need to call any argument in object, we use this keyword in that function.
+
+if we want to call a function in an object and return value of function by object then we use this
+keyword. if we do not use this, it will show error. 
+
+   var a= {
+            name:"ali",
+            class: "one",
+            subj: "comp", 
+            marks: "50",
+            friends:["ahsan", "umer", "usama", "saad", "haris"],
+
+            income: function () {
+                return 25000;
+            },
+
+            Fun: function () {
+                return this.name + " " + this.class; 
+            }
+        };
+        document.write(a.Fun());
+
+
+lec 44. array as object.
+    var hello= [
+        {
+        name:"ali",
+        age:"22"
+    },
+    {
+        name:"kashan",
+        age:"12"
+    },
+    {
+        name:"haider",
+        age:"25"
+    },
+    {
+        name:"usman",
+        age:"20"
+    }
+];
+     console.log(hello);
+
+we can use for loop on it as well. 
+    var hello= [
+        {
+        name:"ali",
+        age:"22"
+    },
+    {
+        name:"kashan",
+        age:"12"
+    },
+    {
+        name:"haider",
+        age:"25"
+    },
+    {
+        name:"usman",
+        age:"20"
+    }
+];
+     for (var a=0; a<hello.length; a++) {
+        document.write(hello[a].name + " " + hello[a].age + "<br/>");
+     }
+
+using for in loop. 
+
+    var a=         
+    {
+        name:"ali",
+        age:"22",
+        class:"two",    
+    };
+     
+    for(var key in a) {
+        document.write(key + ": " + a[key] + "<br/>");
+     }
