@@ -355,3 +355,119 @@ lec 46. number methods.
         var b= a.toPrecision(3);
         document.write(b); //20.4 output
 
+lec 47. math methods. 
+ceil, floor, round, trunc, max, min, sqrt, cbrt, pow, random, abs, pi.
+
+.ceil. it shows upper value. 
+var a= math.ceil(5.66); //6
+
+.floor. it shows lower value.
+var a= math.floor(7.56); //7
+
+.round. it will roundoff.
+var a= math.round(5.66); //6
+
+.trunc. it will remove decimal part.
+var a= math.trunc(5.66); //5
+
+.max. it will show maximum value.
+var a= math.max(5,6,7,8); //8
+
+.min. it will show minimum value.
+var a= math.min(5,6,7,8); //5
+
+.sqrt. it will show square root.
+var a= math.sqrt(25); //5
+
+.cbrt. it will show cube root.
+var a= math.cbrt(27); //3
+
+.pow. it will show power. 2 values need. 1 is base, 2 is exponent.
+var a= math.pow(2,3); //8
+
+.random. it will show random value between 0 and 1.
+var a= math.random(); //0.23456
+
+.abs. it will show absolute value.
+var a= math.abs(-5); //5
+
+.pi. it will show pi value.
+var a= math.pi; //3.14159
+
+
+
+lec 48. date methods.
+todatestring, getdate, getfullyear, getmonth, getday, gethours, getminutes, getseconds,
+getmilliseconds, setdate, setfullyear, sethours, setmilliseconds, setminutes. 
+
+new date(). it will show current date and time.
+var a= new date();
+document.write(a);
+//output: current date and time. 
+
+.getdate. it will show date.
+var a= new date();
+var b= a.getdate();
+document.write(b);
+//output: current date.
+
+.getfullyear. it will show full year.
+var a= new date();
+var b= a.getfullyear();
+document.write(b);
+//output: current year.
+
+.gethours. it will show hours.
+var a= new date();
+var b= a.gethours();
+document.write(b);
+//output: current hours.
+
+.getmonth. it will show month. (0-11)
+var a= new date();
+var b= a.getmonth();
+document.write(b);
+//output: current month. (0-11)
+
+.getseconds. it will show seconds.
+var a= new date();
+var b= a.getseconds();
+document.write(b);
+//output: current seconds.
+
+.setdate. it will set date.
+var a= new date();
+a.setdate(25);
+document.write(a);
+//output: current date and time with date 25.
+
+.setfullyear. it will set full year.
+var a= new date();
+a.setfullyear(2025);
+document.write(a);
+//output: current date and time with year 2025.
+
+.sethours. it will set hours.
+var a= new date();
+a.sethours(12);
+document.write(a);
+//output: current date and time with hours 12.
+
+.setminutes. it will set minutes.
+var a= new date();
+a.setminutes(30);
+document.write(a);
+//output: current date and time with minutes 30.
+
+.setseconds. it will set seconds.
+var a= new date();
+a.setseconds(45);
+document.write(a);
+//output: current date and time with seconds 45.
+
+.todatestring. it will show date in local format.
+var a= new date();
+document.write(a.todatestring());
+//output: current date in local format.
+
+
