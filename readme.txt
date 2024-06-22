@@ -541,3 +541,114 @@ document.queryselector(".outside").addeventlistener("click", function(params) {
 }, false
 );
 
+
+Lec 55. classList Method.
+if we create new class in css and want to add it in html respected tag, we can do this. 
+    var news;
+    document.getelementbyid("header").addeventlistener("click", fun);
+    function fun (params) {
+    document.getelementbyid("header").classList.add("newclass");
+    }
+// it will add newclass in header tag.
+we can add multiple classes also by using ,. 
+
+we can remove class also.
+document.getelementbyid("header").classList.remove("newclass");
+
+var again = document.getelementbyid("header").classList.length;
+console.log(again);
+// it will show how many classes are there in header tag.
+
+var again = document.getelementbyid("header").classList.item(0);
+console.log(again);
+// it will show first class of header tag.
+
+var again = document.getelementbyid("header").classList.contains("newclass");
+console.log(again);
+// it will show true or false whether newclass is there or not.
+
+var again = document.getelementbyid("header").classList.toggle("newclass");
+console.log(again);
+// it will add class if it is not there and remove if it is there.
+
+
+Lec 56. Parent Nodes
+DOM Traversal methods. 
+ParentNode. ParentElement. firstChild. firstElementChild. Children. childNodes. LastChild. 
+lastElementchild. nextElementSibling, nextSibling, previousElementSibling, previousSibling, Document.domain
+
+var one = document.getelementbyid("header").ParentElement;
+console.log(one);
+// it will show parent element of header tag.
+
+var one= document.getelementbyid("header").ParentElement.style.background= "red";
+console.log(one);
+// it will change background color of parent element of header tag.
+
+
+var one = document.getelementbyid("header").ParentNode;
+console.log(one);
+// it will show parent node of header tag.
+
+var one = document.getelementbyid("header").firstChild;
+console.log(one);
+// it will show first child of header tag.
+
+var one = document.getelementbyid("header").firstElementChild;
+console.log(one);
+// it will show first element child of header tag.
+
+var one = document.getelementbyid("header").Children;
+console.log(one);
+// it will show all children of header tag.
+
+
+var one= document.getelementbyid("header").Children[5];
+console.log(one);
+// it will show 5th child of header tag. it will show undefined error if there is no 5th child.
+
+var one= document.getelementbyid("header").Children[2].style.background="blue";
+// it will change background color of 2nd child of header tag.
+
+var one = document.getelementbyid("header").childNodes;
+console.log(one);
+// it will show all child nodes of header tag.
+
+
+var one = document.getelementbyid("header").childNodes[2].innerhtml;
+console.log(one);
+// it will show innerhtml of 2nd child node of header tag.
+
+
+var one = document.getelementbyid("header").LastChild;
+console.log(one);
+// it will show last child of header tag.
+
+var one = document.getelementbyid("header").lastElementChild;
+console.log(one);
+// it will show last element child of header tag.
+
+var one = document.getelementbyid("header").nextElementSibling;
+console.log(one);
+// it will show next element sibling of header tag.
+
+var one = document.getelementbyid("header").nextSibling;
+console.log(one);
+// it will show next sibling of header tag.
+
+var one = document.getelementbyid("header").previousElementSibling;
+console.log(one);
+// it will show previous element sibling of header tag.
+
+var one = document.getelementbyid("header").previousSibling;
+console.log(one);
+// it will show previous sibling of header tag.
+
+var one = document.domain;
+console.log(one);
+// it will show domain of the document.
+
+// Note: These methods are used to traverse the DOM tree. They are used to navigate through the
+elements of the document. They are used to get the parent, child, sibling elements of a
+particular element.
+
