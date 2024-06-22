@@ -471,3 +471,57 @@ document.write(a.todatestring());
 //output: current date in local format.
 
 
+Lec 49. DOM Model
+Lec 50. DOM Other Objects.
+We can target using id, class, and tag name. 
+document.getelementbyid. document.getelementbyclassname. document.getelementbytagname. 
+
+Lec 51. DOM Get methods.
+.innertext, innerhtml, getattribute, getattributenodes, attributes.
+
+.innertext
+var a= document.getelementbyid("id");
+document.write(a.innertext);
+//output: text inside the element.
+
+.innerhtml
+var a= document.getelementbyid("id");
+document.write(a.innerhtml);
+//output: html inside the element.
+
+.getattribute
+var a= document.getelementbyid("id");
+document.write(a.getattribute("class"));
+//output: class attribute value.
+
+.getattributenodes
+var a= document.getelementbyid("id");
+document.write(a.getattributenodes("style"));
+//output: class attribute node.
+this is not recommended to use. 
+
+Lec 52. DOM Styling. 
+var element;
+element= document.queryselector("id").style.border;
+console.log(element);
+// it will show border if it has. //2px solid black.
+
+if we want to change, then we will use 
+element= document.queryselector("id").style.border= "2px solid red";
+
+document.queryselector("id").classlist.add(header); // it will add class.
+document.queryselector("id").classlist.remove(header); // it will remove class.
+
+Lec 53. events and add events listener. 
+onclick, onload. we discussed these in other videos. 
+now add event listener.
+
+document.getelementbyid("header").addeventlistener("click", function(){
+    console.log("you clicked me");
+    });
+    
+    // it will show message in console when we click on the element.
+if you want to change background color or apply any other property using js, then you can do it also.
+
+
+Lec 54. useCapture. 
