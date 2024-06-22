@@ -525,3 +525,19 @@ if you want to change background color or apply any other property using js, the
 
 
 Lec 54. useCapture. 
+it is only true or false. if we do not want to use any event then we use this. below is example.
+for example we have one outer and one inner box. when we click on outer box, it alert inner box. 
+but when we click on inner box, it first shows outer box then alert inner box. we want that when we 
+click inner box, it should not alert outer box but only alert inner box. 
+then we use useCapture.
+
+document.queryselector(".inside").addeventlistener("click", function(params) {
+    alert("this is inner box");
+}, false
+);
+
+document.queryselector(".outside").addeventlistener("click", function(params) {
+    alert("this is outside box");
+}, false
+);
+
