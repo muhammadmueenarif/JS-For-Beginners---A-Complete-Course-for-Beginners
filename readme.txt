@@ -666,3 +666,18 @@ console.log(element);
 var element3=  document.createComment("This is JS Comment");
 console.log(element);
 // it will create a new comment node with the text "This is JS Comment".
+
+
+Lec 58. Append child and insert before.
+var parent = document.getElementById("header");
+var child = document.createElement("h3");
+child.textContent = "Kashan Moin"
+parent.appendChild(child);
+// it will append the child element to the parent element.
+
+var target = document.getelementbyid("new");
+target.insertBefore(element.target.childNodes);
+// it will insert the element before the target element.
+
+target.insertBefore(element.target.childNodes[4]);
+// it will insert the element before the target element's 4th child node.
