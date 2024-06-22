@@ -681,3 +681,41 @@ target.insertBefore(element.target.childNodes);
 
 target.insertBefore(element.target.childNodes[4]);
 // it will insert the element before the target element's 4th child node.
+
+
+Lec 59. insert adjacent element and insert adjacent html.
+
+appendChild and insertBefore methods only append.
+insert adjacent element, insert adjacent html and insert adjacent text create and append. 
+
+insertadjacentelement will use tag. <p></p>
+insertadjacenttext will use textcontent. "this is text"
+insertadjacenthtml will use innerhtml. <p>text</p>
+
+    DOM insertAdjacent positions
+    1.Beforebegin
+    2.Afterbegin
+    3.beforeend
+    4.afterend
+
+var element= document.createElement("h1");
+var text= document.createTextNode("Kashan Moin");
+var target= document.getElementById("div");
+target.insertadjacentelement("Beforebegin", element);
+//it will write before div
+
+
+target.insertadjacentelement("Afterbegin", element);
+//it will write after div
+
+target.insertadjacentelement("Beforeend", element);
+//it will write before div's end
+
+target.insertadjacentelement("Afterend", element);
+//it will write after div's end
+
+
+var target= document.getelementbyid("div");
+var element1= "<h2>Kashan Moin</h2>";
+target.insertadjacenthtml("afterend", element1);
+
