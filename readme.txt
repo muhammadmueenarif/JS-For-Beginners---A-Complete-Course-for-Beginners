@@ -652,3 +652,17 @@ console.log(one);
 elements of the document. They are used to get the parent, child, sibling elements of a
 particular element.
 
+
+Lec 57. Create Element Text Node
+
+var element=  document.createElement("h3");
+console.log(element);
+// it will create a new h3 element in html.
+
+var element2=  document.createTextNode("Kashan Moin");
+console.log(element);
+// it will create a new text node with the text "Kashan Moin".
+
+var element3=  document.createComment("This is JS Comment");
+console.log(element);
+// it will create a new comment node with the text "This is JS Comment".
